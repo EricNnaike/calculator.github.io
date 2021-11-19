@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+.wrapper{
+    padding: 0 150px;
+}
+.container{
+    padding: 0 130px 140px 130px;
+    background-color: hsl(185, 41%, 84%);
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 90px 0 70px 0;
+}
+.calc-con{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+.calc-con .bill{
+    flex: 45%;
+    padding: 20px 0 15px 0;
+    margin-right: 15px;
+}
+.calc-con .bill h3{
+    margin: 0;
+    color: hsl(183, 100%, 15%);
+    padding-bottom: 5px;
+}
+.bill .first-con{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 10px 10px;
+    background-color: hsl(189, 41%, 97%);
+}
+.first-con .first-con-img{
+    flex: 5%;
+    line-height: 0;
+    margin-top: 4px;
+}
+.first-con-text{
+    flex: 95%;
+}
+.first-con-text input{
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    line-height: 22px;
+    background-color: hsl(189, 41%, 97%);
+}
+.select{
+    padding: 38px 0 38px 0;
+}
+.select-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.select-con > button{
+    flex: 30%;
+    margin: 5px 0 13px 0;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    font-size: 17px;
+    cursor: pointer;
+}
+.select-con .first-1{
+    margin-left: 15px;
+}
+.select-con .second{
+    margin-left: 15px;
+}
+.select-con .third{
+    margin-left: 15px;
+}
+.select-con .third-1{
+    margin-left: 15px;
+}
+.select-con div:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+@media only screen and (min-width: 200px) and (max-width: 766px) {
+    .wrapper{
+        padding: 0 0;
+    }
+    .container{
+        padding: 0;
+    }
+    .logo{
+        padding: 50px 0 50px 0;
+    }
+    .calc-con{
+        flex-direction: column;
+        padding: 0 18px;
+    }
+    .calc-con .bill{
+        padding: 0 0 25px 0;
+        margin-right: 0;
+    }
+    .select-con > button{
+        flex: 40%;
+
+    }
+    .select-con .second{
+        margin-left: 0;
+    }
+    .select-con .second-1{
+        margin-left: 15px;
+    }
+    .select-con .third{
+        margin-left: 0;
+    }
+    .select-con .third-1{
+        margin-left: 17px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+    .wrapper{
+        padding: 0 30px;  
+    }
+    .container{
+        padding: 0;
+    }
+    .select-con #third{
+        flex: 40%;
+        margin-right: 8px;
+    }
+    /* .select-con .second{
+        margin-left: 0;
+    } */
+}
+ @media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .wrapper{
+        padding: 0 60px;  
+    }
+    .container{
+        padding: 40px;
+    }
+}
+ @media only screen and (min-width: 1025px) and (max-width: 1075px) {
+    .wrapper{
+        padding: 0 90px;  
+    }
+    .container{
+        padding: 70px;
+    }
+     /* .select-con #third{
+        flex: 40%;
+        margin-right: 8px;
+    } 
+     .select-con .second{
+        margin-left: 0;
+    } */
+}
+.calc-con .amount{
+    flex: 45%;
+    margin-left: 15px;
+    background-color: hsl(183, 100%, 15%);
+    padding: 37px 30px 0 30px;
+    border-radius: 15px;
+}
+.amount .tip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tip-fig h3{
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+.tip-fig p{
+    margin: 0 0;
+    color: hsl(186, 14%, 43%);
+}
+.tip-fig h1{
+    line-height: 45px;
+    margin: 0;
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+.button{
+    padding-top: 140px;
+}
+.button button{
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: hsl(186, 14%, 43%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: hsl(172, 67%, 45%); 
+}
+@media only screen and (min-width: 200px) and (max-width: 766px) {
+    .calc-con .amount{
+        margin-left: 0;
+        padding: 37px 30px 25px 30px;
+    }
+    .button{
+        padding-top: 30px;
+    }
+    .tip-fig h3{
+        font-size: 12px;
+    }
+    .tip-fig h1{
+        line-height: 40px;
+    }
+    .tip-fig h1{
+        font-size: 35px;
+    }
+}
+

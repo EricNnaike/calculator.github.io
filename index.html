@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="">
+            </div>
+            <div class="calc-con">
+                <div class="bill">
+                    <h3 id="demo">Bill</h3>
+                    <div class="first-con">
+                        <div class="first-con-img">
+                            <img src="./assets/img/icon-dollar.svg" alt="">
+                        </div>
+                        <div class="first-con-text">
+                            <!-- <h2 id="billamount"></h2> -->
+                            <input type="text" id="billamount">
+                        </div>
+                    </div>
+                    <div class="select">
+                        <h3 style="padding-bottom: 10px;">Select Tip %</h3>
+                        <div class="select-con">
+                            <button onclick="fivePercent()" type="button" class="first">5%</button>
+                            <button onclick="tenPercent()" type="button" class="first-1">10%</button>
+                            <button onclick="fifteenPercent()" type="button" class="second">15%</button>
+                            <button onclick="twentyFivePercent()" type="button" class="second-1">25%</button>
+                            <button onclick="fiftyPercent()" type="button" class="third">50%</button>
+                            <button type="button" class="third-1" style="background-color: hsl(189, 41%, 97%); color: hsl(183, 100%, 15%);">Custom</button>
+                            <!-- <div class="first">5%</div>
+                            <div class="first-1">10%</div>
+                            <div class="second">15%</div>
+                            <div class="second-1">25%</div>
+                            <div class="third">50%</div>
+                            <div class="third-1" style="background-color: hsl(189, 41%, 97%); color: hsl(183, 100%, 15%);">Custom</div> -->
+                        </div>
+                    </div>
+                    <h3> Number of People</h3>
+                    <div class="first-con">
+                        <div class="first-con-img">
+                            <img src="./assets/img/icon-dollar.svg" alt="">
+                        </div>
+                        <div class="first-con-text">
+                            <!-- <h2 id="clients"></h2> -->
+                            <input type="text" id="clients">
+                        </div>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="tip">
+                        <div class="tip-fig">
+                            <h3>Tip Amount</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="tip-fig">
+                            <h1 id="tipamount">$</h1>
+                        </div>
+                    </div> 
+                    <div class="tip" style="padding-top: 25px;">
+                        <div class="tip-fig">
+                            <h3>Total</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="tip-fig">
+                            <h1 id="total">$</h1>
+                        </div>
+                    </div> 
+                    <div class="button">
+                        <button onclick="reset()" type="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
